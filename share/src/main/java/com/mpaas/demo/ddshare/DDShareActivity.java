@@ -11,7 +11,7 @@ import com.android.dingtalk.share.ddsharemodule.IDDAPIEventHandler;
 import com.android.dingtalk.share.ddsharemodule.IDDShareApi;
 import com.android.dingtalk.share.ddsharemodule.message.BaseReq;
 import com.android.dingtalk.share.ddsharemodule.message.BaseResp;
-import com.mpaas.demo.share.R;
+import com.mpaas.demo.sharedemo.R;
 
 public class DDShareActivity extends Activity implements IDDAPIEventHandler {
 

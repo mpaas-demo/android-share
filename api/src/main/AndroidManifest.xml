@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mpaas.demo.share.api">
+    package="com.mpaas.demo.sharedemo.api">
 
     <application
         android:allowBackup="true"

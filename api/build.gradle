@@ -1,15 +1,13 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.alipay.library'
-apply plugin: 'android-apt'
+
 apply plugin: 'com.alipay.apollo.baseline.update'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 26
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 23
+        minSdkVersion 18
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
     }

@@ -1,6 +1,7 @@
 package com.mpaas.demo.share;
 
 import android.os.Bundle;
+import android.support.v7.widget.MenuPopupWindow;
 import android.view.View;
 import android.widget.AdapterView;
 
@@ -15,8 +16,8 @@ import com.alipay.mobile.framework.service.ShareService;
 import com.alipay.mobile.h5container.api.H5Bundle;
 import com.alipay.mobile.h5container.api.H5Param;
 import com.alipay.mobile.h5container.service.H5Service;
-import com.mpaas.demo.sharedres.MenuPopupWindow;
 import com.mpaas.framework.adapter.api.MPFramework;
+import com.mpaas.demo.sharedemo.R;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -112,8 +113,8 @@ public class ShareActivity extends BaseActivity {
         mTitle.getRightButtonIconView().setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MenuPopupWindow popupWindow = new MenuPopupWindow(ShareActivity.this);
-                popupWindow.showAsDropDown(mTitle.getRightButtonIconView(), 0, 0);
+//                MenuPopupWindow popupWindow = new MenuPopupWindow(ShareActivity.this);
+//                popupWindow.showAsDropDown(mTitle.getRightButtonIconView(), 0, 0);
             }
         });
         mShareBtn.setOnClickListener(new View.OnClickListener() {
