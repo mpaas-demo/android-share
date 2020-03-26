@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mpaas.demo.share">
+
+    <application
+        android:name="com.mpaas.demo.ShareApplication" >
+        <activity android:name="com.mpaas.demo.share.ShareActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享时用于回调接收的activity -->
+        <activity
+            android:name="com.mpaas.demo.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <!-- QQ分享时所需的AssistActivity -->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- QQ分享时所需的AuthActivity -->
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- QQ分享ID，格式为"tencent+QQ分享ID"。请保证QQ分享ID与代码中设置的QQ分享ID相同，否则会导致分享回调异常 -->
+                <data android:scheme="tencent1104122330" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:launchMode="singleInstance"
+            android:name="com.mpaas.demo.ddshare.DDShareActivity">
+        </activity>
+    </application>
+
+</manifest>

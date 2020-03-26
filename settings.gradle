@@ -1,0 +1,2 @@
+include ':api', ':share-build'
+project(':share-build').projectDir = new File('share')
